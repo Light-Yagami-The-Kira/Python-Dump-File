@@ -9,3 +9,8 @@ def greater(n,m):
 list = [45,96,87,54]
 
 print(reduce(greater,list))
+
+def cumSum(a,b):
+    return a+b
+
+print(reduce(cumSum,list))
