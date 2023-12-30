@@ -3,9 +3,10 @@ import random
 
 def get_busy_room():
     A = open("log.csv", 'r')
-    if A.read() == '':
+    aw = A.read()
+    if aw == '':
         return []
-    a = A.read()[:-1].split('\n')
+    a = aw[:-1].split('\n')
 
     a = [k.split(',')[0] for k in a]
     A.close()
@@ -13,12 +14,15 @@ def get_busy_room():
 
 def get_busy_guest_id():
     A = open("log.csv", 'r')
-    if A.read() == '':
+    aq = A.read()
+    if aq == '':
         return []
-    a = A.read()[:-1].split('\n')
+    a = aq.split('\n')[:-1]
+
 
     a = [k.split(',')[2] for k in a]
     A.close()
+
     return a
 
 def check_in():
@@ -33,7 +37,7 @@ def check_in():
     check_out_date = input("Enter checkout date in YYYY-MM-DD or leave blank for no checkout.")
 
     Q = open('log.csv', 'a')
-    Q.write(f'{room},{guest_name},{gen_guest_id()},{check_in_date},{check_out_date}')
+    Q.write(f'{room},{guest_name},{gen_guest_id()},{check_in_date},{check_out_date}\n')
     Q.close
 
 def check_out():
@@ -61,10 +65,8 @@ def check_out():
 
 def clearHotel():
     A = open('log.csv', 'w')
-    C = open('busy_guest_id.txt', 'w')
 
     A.write('')
-    C.write('')
 
     print("Cleared.")
 
