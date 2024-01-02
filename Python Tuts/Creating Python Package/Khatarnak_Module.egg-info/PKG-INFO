@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Khatarnak-Module
+Version: 0.1
+Summary: Returns a number entered by the user
+Author: Mr. Krishanu Karmakar
+Author-email: krishanukarmakar.kk94@gmail.com
+License-File: License.txt
+
+I Krishanu Karmakar have created this Khatarnak Module to return the number        entered by the user or given to the function as an arguement
