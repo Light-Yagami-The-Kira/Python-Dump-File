@@ -75,5 +75,7 @@ print("---------------------")
 f(s,r'Name')
 print("---------------------")
 f(s,r'\d{3}-\d{4}') ## CHECKS PHONE NUMBER
+print("---------------------")
+f(s,r'^K') 
 
 # f(s, r'^Name')
