@@ -27,6 +27,7 @@ Meta Characters
 $ Ends with
 * Zero or more occurrences
 + One or more occurrences
+?
 {} Exactly the specified number of occurrences
 | Either or
 () Capture and group
