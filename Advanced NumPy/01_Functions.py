@@ -6,16 +6,23 @@ print(arr1)
 
 arr2 = np.ones(4)
 print(arr2)
-arr2 = np.ones((2,4))
+arr2 = np.ones((2,4), dtype=int)
 print(arr2)
 
 arr = np.eye(3)
-print(arr)
+print("eye\n", arr)
 arr = np.eye(3,4)
 print(arr)
-
-arr = np.diag([69,1,2,3,4,5,6])
+arr = np.eye(3,k=1)
 print(arr)
+print("==============================")
+arr = np.diag([1,2,3,4,5,6], k=0)
+print(arr)
+arr = np.diag([1,2,3,4,5,6], k=1)
+print(arr)
+arr = np.diag([1,2,3,4,5,6], k=2)
+print(arr)
+print("==============================")
 
 print(f"Diagonals of the above array are {np.diag(arr)}")
 
