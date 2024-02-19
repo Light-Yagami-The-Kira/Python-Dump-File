@@ -1,6 +1,6 @@
 import cv2
 # img = cv2.imread(r"data/lena.jpg", 0)
-img = cv2.imread(r"data/lena.jpg", 1)
+img = cv2.imread(r"data/lena.jpg", )
 print(img)
 ## IF IMAGE DOES NOT EXIST, THEN THE PRINT WILL GIVE NONE
 
