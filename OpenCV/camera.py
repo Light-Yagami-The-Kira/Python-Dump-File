@@ -21,7 +21,8 @@ while cap.isOpened():
     else:
         break
 else:
-    print("Camera Not Avaialble")
+    print("There is no Camera Avaialble")
 
 cap.release()
+out.release()
 cv2.destroyAllWindows()
